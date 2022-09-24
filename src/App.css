@@ -13,6 +13,11 @@
   }
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +40,118 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/*******custom*********/
+
+body{
+  background-color: rgb(233, 232, 232);
+}
+.navbar .navbar-brand{
+  font-size:30px ;
+   letter-spacing: 5px;
+}
+
+.about-img{
+  background-color: rgb(106, 152, 238);
+  border-top:12px solid rgb(255, 94, 0) ;
+  border-bottom:12px solid rgb(128, 236, 26) ;
+  width: 375px;
+  height: 380px;
+}
+.about-section .about-content{
+  margin-top: 112px;
+  margin-bottom: 112px;
+}
+
+.about-section .my-details{
+  line-height: 3;
+} 
+
+.about-section .my-details span{
+  display:inline-block;
+  width: 120px;
+  font-style: sans pro;
+  font-weight: 600; 
+}
+nav{
+  top: 0;
+  background: #32363f57;
+}
+.nav-item{
+  margin-left: 40px;
+  text-transform: uppercase;
+  font-weight:600;
+}
+
+.hh{
+  position: absolute;
+  top:0;
+   align-items: center;
+  left:0;
+  right:0;
+}
+ul li .nav-link
+{
+  position:relative;
+}
+ul li .nav-link:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  height:2px;
+ background: rgb(36, 17, 214);
+  transform: scale(0);
+  transition: .5s;
+}
+ul li .nav-link:hover:before{      
+  transform: scale(1);
+}
+ul li .nav-link:active:before{      
+  transform: scale(1);
+}
+.form-control:focus
+{
+  border-color:rgb(122, 235, 17); 
+     box-shadow: 0 0 0 0.2rem  rgba(122, 235, 17, 0.383);
+}
+
+
+.footer{
+  background-color: black;
+  color: gray;
+}
+
+.social-icons li{
+  list-style: none;
+   
+}
+
+.social-icons li a
+{
+  text-decoration: none;
+  color: gray;
+}
+
+.fb:hover
+{
+  color:#4267B2
+}
+.insta:hover
+{
+  color:#8a3ab9
+}
+.in:hover
+{
+  color:#4267B2
+}
+.git:hover
+{
+  color:#4267B2
+}
+.twt:hover
+{
+  color:#4267B2
 }
